@@ -1,2 +1,30 @@
 a)
-	1. 
+	6 strings distinguishable over language of Problem 2
+
+	1. []
+	2. a
+	3. aa
+	4. aaa
+	5. aaaa
+	6. aaaaaa
+
+				String u that make the string pairs distinguishable
+
+	1.  ([], a)		a
+	2.  ([], aa)		a
+	3.  ([], aaa)		a
+	4.  ([], aaaa)		aaa
+	5.  ([], aaaaa)		a
+	6.  (a, aa)		aaa
+	7.  (a, aaa)		aa
+	8.  (a, aaaa)		a
+	9.  (a, aaaaa)		aa
+	10. (aa, aaa)		aa
+	11. (aa, aaaa)		a
+	12. (aa, aaaaa)		a
+	13. (aaa, aaaa)		a
+	14. (aaa, aaaaa)	aaaa
+	15. (aaaa, aaaaa)	a
+
+b)
+	Any DFA that accepts the language of Problem 2 must have at least six states because to get multiples of two AND three, we have to look at all the multiples of 6 since the only number that is both a multiple of 2 and 3 is 6. There needs to be six states because, as seen above in part a, each state is distinguishable. When you have 7 states, two states are not distinguishable. Thus, you need at least six states to build a DFA that accepts the language of Problem 2. 
